@@ -1,4 +1,4 @@
-import StudentInterface from '../classes/student.js'
+import StudentInterface from "../classes/student.js"
 class Student implements StudentInterface {
 	constructor(
 		private first_name: string,
@@ -10,6 +10,12 @@ class Student implements StudentInterface {
 	}
 	setName(newName: string): void {
 		this.first_name = newName
+	}
+	set newAge(value: number) {
+		this.age = value
+	}
+	set anotherName(value: string) {
+		this.first_name = value
 	}
 }
 
