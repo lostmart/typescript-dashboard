@@ -1,14 +1,18 @@
-import "./style.css"
-import Student from "./classes/student.js"
+import './style.css'
+import UserClass from './classes/User.js'
 
-const martin = new Student("Martin", "Pedraza", 43)
-const fefo = new Student("Fefo", "Lundock", 31)
-
-console.log(martin.sayHi())
-console.log(fefo.sayHi())
-
-martin.anotherName = "gaucho"
-
-martin.newAge = 12
-
-console.log(martin.sayHi())
+interface User {
+	firstName: string
+	lastName: string
+}
+class UserClass {
+	constructor(public user: User) {}
+	getFullName() {
+		return this.user.firstName + ' ' + this.user.lastName
+	}
+}
+const user = new UserClass({
+	firstName: 'John',
+	lastName: 'Doe',
+})
+console.log(user.getFullName())

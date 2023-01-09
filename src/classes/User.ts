@@ -1,5 +1,9 @@
-import StudentInterface from '../classes/student.js'
-class Student implements StudentInterface {
+//import UserInterface from './User.js'
+
+
+
+/*
+class User implements UserInterface {
 	constructor(
 		private first_name: string,
 		private last_name: string,
@@ -22,5 +26,6 @@ class Student implements StudentInterface {
 		this.first_name = value
 	}
 }
+*/
 
-export default Student
+export default UserClass
