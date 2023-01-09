@@ -4,6 +4,8 @@ interface StudentInterface {
 	age: number
 
 	sayHi: () => string
+
+	useGlasses: () => object
 }
 
 export default StudentInterface

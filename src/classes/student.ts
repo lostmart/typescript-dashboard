@@ -1,4 +1,4 @@
-import StudentInterface from "../classes/student.js"
+import StudentInterface from '../classes/student.js'
 class Student implements StudentInterface {
 	constructor(
 		private first_name: string,
@@ -7,6 +7,10 @@ class Student implements StudentInterface {
 	) {}
 	sayHi(): string {
 		return `Hi my name is ${this.first_name} ${this.last_name}. I'm ${this.age} years old`
+	}
+
+	useGlasses(): object {
+		return { name: this.first_name }
 	}
 	setName(newName: string): void {
 		this.first_name = newName
